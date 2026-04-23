@@ -48,3 +48,22 @@ Some Linux commands like `/etc/passwd`, `zip`, and `wget` were adapted due to en
 ---
 
 ##  Project Structure
+linux-devops-basics/
+│
+├── commands/
+│ └── linux_commands.sh
+│
+├── screenshots/
+│
+└── README.md
+
+
+---
+
+## 🚀 Key Learnings
+
+- Practical understanding of Linux commands
+- Handling environment limitations
+- Adapting tools in DevOps workflows
+- Basic scripting and automation
+

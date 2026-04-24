@@ -70,10 +70,10 @@ linux-devops-basics/
 ## Screenshots
 
 ### File & Directory Operations
-![File Operations](screenshots/file_creation.png)
+![File Operations](Screenshots/file_creation.png)
 
 ### Grep
-![Grep Command](screenshots/Grep_commands.png)
+![Grep Command](Screenshots/Grep_commands.png)
 
 ### Permissions
-![Permissions](screenshots/Commands.png)
+![Permissions](Screenshots/Commands.png)

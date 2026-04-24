@@ -60,7 +60,7 @@ linux-devops-basics/
 
 ---
 
-## 🚀 Key Learnings
+## Key Learnings
 
 - Practical understanding of Linux commands
 - Handling environment limitations

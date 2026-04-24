@@ -67,3 +67,13 @@ linux-devops-basics/
 - Adapting tools in DevOps workflows
 - Basic scripting and automation
 
+## Screenshots
+
+### File & Directory Operations
+![File Operations](screenshots/file_creation.png)
+
+### Grep
+![Grep Command](screenshots/Grep_commands.png)
+
+### Permissions
+![Permissions](screenshots/Commands.png)

@@ -27,13 +27,22 @@ def save_to_file():
         for name, grade in students.items():
             file.write(f"{name},{grade}\n")
 
+# delete student logic
+def delete_student(name):
+    if name in students:
+        del students[name]
+        save_to_file()   # ✅ ADDED HERE
+        print(f"{name} has been deleted.")
+    else:
+        print("Student not found")
 
 while True:
     print("\n--- Student Grade Manager ---")
     print("1. Add Student")
     print("2. Update Student")
     print("3. View All Students")
-    print("4. Exit")
+    print("4. Delete Student")  # ✅ ADDED HERE
+    print("5. Exit")  # ✅ ADDED HERE
 
     choice = input("Enter your choice: ")
 
@@ -62,8 +71,14 @@ while True:
             print(f"{name}: {grade}")
 
     elif choice == "4":
-        print("Exiting program...")
+        name = input("Enter student name to delete: ")
+        delete_student(name)  # ✅ ADDED HERE
         break
-
+    
+    elif choice == "5":
+        print("Exiting...")
+        break
+        
     else:
         print("Invalid choice, try again")
+

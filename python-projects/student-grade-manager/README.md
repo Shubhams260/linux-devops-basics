@@ -30,13 +30,13 @@ python student_manager.py
 ## Screenshots
 
 ### File & Directory Operations
-![File Operations](Screenshots/add_student.png)
+![File Operations](screenshots/add_student.png)
 
 ### Grep
-![Grep Command](Screenshots/menu.png)
+![Grep Command](screenshots/menu.png)
 
 ### Permissions
-![Permissions](Screenshots/view_students.png)
+![Permissions](screenshots/view_students.png)
 
 student-grade-manager/
 │

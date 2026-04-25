@@ -29,11 +29,21 @@ python student_manager.py
 
 ## Screenshots
 
-### Main Menu
-![Menu](screenshots/menu.png)
+### File & Directory Operations
+![File Operations](Screenshots/add_student.png)
 
-### Add Student
-![Add Student](screenshots/add_student.png)
+### Grep
+![Grep Command](Screenshots/menu.png)
 
-### View Students
-![View Students](screenshots/view_students.png)
+### Permissions
+![Permissions](Screenshots/view_students.png)
+
+student-grade-manager/
+│
+├── student_manager.py
+├── students.txt
+├── screenshots/
+│   ├── menu.png
+│   ├── add_student.png
+│   └── view_students.png
+└── README.md

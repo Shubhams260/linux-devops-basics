@@ -27,16 +27,18 @@ This tool allows users to add, update, and view student records with persistent 
 ```bash
 python student_manager.py
 
+---
+
 ## Screenshots
 
-### File & Directory Operations
-![File Operations](screenshots/add_student.png)
+### ADDING STUDENTS
+![VIEW STUDENTS](screenshots/add_student.png)
 
-### Grep
-![Grep Command](screenshots/menu.png)
+### MENU OPTIONS
+![MENU](screenshots/menu.png)
 
-### Permissions
-![Permissions](screenshots/view_students.png)
+### VIEWING STUDENTS
+![VIEW STUDENTS](screenshots/view_students.png)
 
 student-grade-manager/
 │

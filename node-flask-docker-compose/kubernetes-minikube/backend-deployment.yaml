@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-backend
+  template:
+    metadata:
+      labels:
+        app: flask-backend
+    spec:
+      containers:
+      - name: flask-backend
+        image: python:3.10
+        command: ["/bin/sh"]
+        args:
+          - -c
+          - |
+            pip install flask flask-cors &&
+            cat <<EOF > app.py
+            from flask import Flask
+            from flask_cors import CORS
+
+            app = Flask(__name__)
+            CORS(app)
+
+            @app.route('/')
+            def home():
+                return "Flask Backend Running"
+
+            @app.route('/submit')
+            def submit():
+                return {"message": "Form Submitted Successfully"}
+
+            app.run(host='0.0.0.0', port=5000)
+            EOF
+            python app.py
+        ports:
+        - containerPort: 5000

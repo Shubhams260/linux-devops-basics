@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-frontend
+  template:
+    metadata:
+      labels:
+        app: node-frontend
+    spec:
+      containers:
+      - name: node-frontend
+        image: node:18
+        command: ["/bin/sh"]
+        args:
+          - -c
+          - |
+            mkdir app && cd app &&
+            npm init -y &&
+            npm install express cors &&
+            cat <<EOF > server.js
+            const express = require('express');
+            const cors = require('cors');
+
+            const app = express();
+            app.use(cors());
+
+            app.get('/', (req, res) => {
+              res.send('Node.js Frontend Running');
+            });
+
+            app.get('/backend', async (req, res) => {
+              res.send('Connected to Flask Backend');
+            });
+
+            app.listen(3000, '0.0.0.0', () => {
+              console.log('Frontend running on port 3000');
+            });
+            EOF
+            node server.js
+        ports:
+        - containerPort: 3000

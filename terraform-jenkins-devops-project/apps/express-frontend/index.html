@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Node Frontend</title>
+</head>
+<body>
+    <h2>Send Data to Flask Backend</h2>
+
+    <form method="POST" action="/submit">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Message:</label><br>
+        <textarea name="message" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
